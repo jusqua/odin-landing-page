@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+:root {
+  --primary-text-color: #F9FAF8;
+  --secondary-text-color: #E5E7EB; 
+  --primary-color: darkgreen;
+  --secondary-color: lightgreen;
+  --tertiary-color: green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+body > * {
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+header, footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+}
+
+header h1 img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--secondary-text-color);
+  transition: 0.2s text-decoration;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+#hero .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30vw;
+  gap: .5rem;
+}
+
+#hero .box h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+#hero .box p {
+  font-size: 1.5rem;
+  color: var(--secondary-text-color);
+}
+
+#hero .box button {
+  background-color: var(--tertiary-color);
+  border: 0;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+  padding: .5rem 2rem;
+  transition: 0.2s filter;
+}
+
+#hero .box button:hover {
+  filter: brightness(1.2);
+}
+
+#hero img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text-color);
+  height: 30vh;
+  width: 35vw;
+  border-radius: 8px;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#info .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#info .box .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+  gap: .5rem;
+}
+
+#info h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+#info .box .card img {
+  border: 4px solid var(--tertiary-color);
+  border-radius: 1rem;
+  width: 10rem;
+  height: 10rem;
+}
+
+#info .box .card p {
+  color: #4b5563;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#quote {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#quote h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+#quote p {
+  text-align: right;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--primary-color);
+  padding-right: 2rem;
+}
+
+#call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#call .center {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8rem;
+  border-radius: 1rem;
+  gap: 3rem;
+}
+
+#call .center * {
+  color: var(--primary-text-color);
+}
+
+#call .center .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#call .center .box h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#call .center .box p {
+  font-size: 1rem;
+}
+
+#call .center button {
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--secondary-text-color);
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  padding: .5rem 2rem;
+  transition: 0.5s background, 0.5s color;
+}
+
+#call .center button:hover {
+  background: var(--primary-text-color);
+  color: green;
+}
+
+footer {
+  background: var(--primary-color);
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+footer a {
+  color: lime;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  #hero {
+    flex-direction: column;
+  }
+
+  #info .box {
+    flex-wrap: wrap;
+  }
+}
+
